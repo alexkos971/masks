@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="logo" href="img/logo.png">
+    
+    <title>omlook_mask</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#"><img src="img/logo.png"></a>
+        </div>
+        
+        <img id="banner" src="banner.png">
+
+        <div class="contact">
+            <ul>
+                <li><a><img src="icons/call.svg"><h4>+7 (495) 135-06-82</h4></a></li>
+                <li><a><img src="icons/telegram.svg"><h4>Наш telegram чат</h4></a></li>
+            </ul>
+
+            <button class="header_btn">
+                Заказать обратный звонок
+            </button>
+        </div>
+    </header>
+
+
+<form action="telegram.php" class="send fix" method="POST">
+<div class="close">
+    <span></span>
+    <span></span>
+</div>
+
+    <h4>Имя и фамилия</h4>
+    <input type="text" name="user_name">         
+    
+    <h4>Телефон</h4>
+    <input type="text" name="user_phone">
+    
+    <h4>E-mail</h4>
+    <input type="text" name="user_email">
+    
+    <h4>Сообщение</h4> 
+    <input type="text" name="user_message">
+
+    <button type="submit" class="form_btn">Купить</button>
+</form>
+
+<!-- Fixed slider -->
+<div class="certef_slider slider_fix">
+
+    <div class="slider_btn left left_fix" onclick="left()">
+        <span id="up_1"></span>
+        <span id="up_2"></span>
+        <span id="up_3"></span>
+    </div>
+
+    <div class="certef_images certef_fix" id="certef_images">
+        <img src="img/certificate2.png" class="c_img" alt=""> 
+        <img src="img/certificate.png" class="c_img" alt="">
+        <img src="img/certificate3.png" class="c_img" alt="">
+    </div>
+
+    <div class="slider_btn rigth right_fix" onclick="right()">
+        <span id="down_1"></span>
+        <span id="down_2"></span>
+        <span id="down_3"></span>
+    </div>
+
+    <div class="dots dots_fix">
+        <div class="dot_indicate" id="dot_1" onclick="dot(event)"></div>
+        <div class="dot_indicate active" id="dot_2" onclick="dot(event)"></div>
+        <div class="dot_indicate" id="dot_3" onclick="dot(event)"></div>
+    </div>
+
+</div>
+
+<!-- all content -->
+<content id="content">
+        <div class="asside">
+            <div class="title">
+                <h1>ЗАЩИТА ПРОТИВ
+                    КОРОНАВИРУСА
+                </h1>
+                <p>Маска трехслойная для защиты от инфицирования вирусными заболеваниями.</p>
+                        
+                <button class="asside_btn">Купить в один клик</button>
+            </div>          
+        </div>
+
+        <div class="mask_slider" id="mask_slider">
+            <div class="slider">
+                <div class="slider_nav">
+                    <div class="slider_btn up" onclick="up()">
+                        <span id="up_1"></span>
+                        <span id="up_2"></span>
+                        <span id="up_3"></span>
+                    </div>
+
+                        <div class="slider_nav_img">
+                            <img src="img/mask_1.jpg" onclick="check(event)" id="mask_1" alt="">
+                            <img src="img/mask_2.jpg" onclick="check(event)" id="mask_2" alt="">
+                            <img src="img/mask_3.jpg" onclick="check(event)" id="mask_3" alt="">
+                            <img src="img/mask_4.jpg" onclick="check(event)" id="mask_4" alt="">
+                        </div>
+
+                    <div class="slider_btn down" onclick="down()">
+                        <span id="down_1"></span>
+                        <span id="down_2"></span>
+                        <span id="down_3"></span>
+                    </div>
+                </div>
+
+                <img src="img/mask_1.jpg" alt="" id="mask_view">
+            </div>
+
+            <div class="mask_description">
+                <h2 class="page_title">МАСКА ТРЕХСЛОЙНАЯ ГОЛУБАЯ</h2>
+
+                <h3 class="desc_title">Описание:</h3>
+                <p class="desc_text">Маска трехслойная для защиты от инфицирования вирусными заболеваниями.</p>
+
+                <h3 class="desc_title">Характеристики:</h3>
+                <div class="desc_text character">
+                    <p>Размер: 17,5х9,5см</p>
+                    <p>Плотность слоев изделия: 10/18/10 гр./ кв. м.</p>
+                    <p>Крепление: на резинках</p>
+                    <p>Производство: Китай</p>
+                    <p>Варианты цветов: Голубая</p>
+                    <p id="last_character">Коэффициент бактериальной фильтрации (КФБ) - 0,98%</p>         
+                </div>
+
+                <h3 class="desc_title">Наличие на складе:</h3>
+                <p class="desc_text">2145 шт.</p>
+
+                <h3 class="desc_title">Цена: <img src="icons/info.png" alt=""></h3>
+                <p class="desc_text cost">от 29 руб./ шт. (мелкий опт)</p>
+
+                <button class="slider_button">Купить в один клик</button>
+                <p class="desc_text predzakaz">*Предзаказ от 500 штук</p>
+            </div>
+        </div>
+
+    
+
+    <div class="certeficates">
+        <h1 class="page_title">СЕРТИФИКАТЫ ПРОИЗВОДСТВ</h1>
+
+        <div class="certef_slider">
+            <div class="slider_btn left" onclick="left()">
+                <span id="up_1"></span>
+                <span id="up_2"></span>
+                <span id="up_3"></span>
+            </div>
+
+            <div class="certef_image">
+                <img src="img/certificate2.png"  alt="" id="certef_1" onclick="press(event)"> 
+                <img src="img/certificate.png"  alt="" id="certef_2" onclick="press(event)">
+                <img src="img/certificate3.png"  alt="" id="certef_3" onclick="press(event)">
+            </div>
+
+            <div class="slider_btn rigth" onclick="right()">
+                <span id="down_1"></span>
+                <span id="down_2"></span>
+                <span id="down_3"></span>
+            </div>
+        </div>
+
+        <div class="dots">
+            <div class="dot_indicate"></div>
+            <div class="dot_indicate active"></div>
+            <div class="dot_indicate"></div>
+        </div>
+    </div>
+
+    <h1 class="page_title">СВЯЖИТЕСЬ С НАМИ</h1>
+    <div class="connect">
+        <form action="telegram.php" class="send">
+            <h4>Имя и фамилия</h4>
+            <input type="text" name="user_name">         
+            
+            <h4>Телефон</h4>
+            <input type="text" name="user_phone">
+            
+            <h4>E-mail</h4>
+            <input type="text" name="user_email">
+            
+            <h4>Сообщение</h4>
+            <input type="text" name="user_message">
+
+            <button type="submit" class="form_btn">Отправить</button>
+
+            <ul>
+                <li><a><img src="icons/map.png"><h4>Москва, Автозаводская 14</h4></a></li>
+                <li><a><img src="icons/call.svg"><h4>+7 (495) 135-06-82</h4></a>
+                <li><a><img src="icons/telegram.svg"><h4>Наш telegram чат</h4></a></li>
+            </ul>
+        </form>
+    </div>
+</content>
+
+    <script src="script.js"></script>
+</body>
+</html>
