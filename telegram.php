@@ -18,10 +18,10 @@
       $txt .= "<b>" .$key. "</b> " .$value. "%0A";
   }
 
-  $send = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}
+  $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}
     &parse_mode=html&text={$txt}", "r");
 
-  if ($send) {
+  if ($sendToTelegram) {
       echo '<h1 id="success">Спасибо !!!</h1>';
   }
   else {
