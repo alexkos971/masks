@@ -810,7 +810,7 @@ content {
 
 @media screen and (max-width: 700px) {
     .header_btn {
-        width: 65%;
+        width: 73%;
         height: 66%;
         top: 22%;
         font-size: 12px;
@@ -887,7 +887,7 @@ content {
         margin: 0 auto;
     }
     .mask_slider {
-        height: 300px;
+        height: 290px;
     }
 
     .mask_description {
@@ -912,8 +912,9 @@ content {
         margin-bottom: -5px;
     }
     .slider_button {
-        width: 101px;
-        height: 23px;
+        width: 96px;
+        height: 20px;
+        margin-top: ;
         font-size: 8px;
     }
 
